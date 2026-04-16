@@ -1,0 +1,120 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Página inteira */
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título fora do card (igual seu print, mas centralizado) */
+.titulo {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    text-align: center;
+}
+
+/* Card */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Subtítulo */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Botões */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Botão adicionar */
+.input-area button {
+    background: #667eea;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f5f6fa;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botões das tarefas */
+.acoes button:first-child {
+    background: #4CAF50;
+}
+
+.acoes button:last-child {
+    background: #ff5252;
+    margin-left: 5px;
+}
+
+/* Tarefa concluída */
+.concluida {
+    background: #e0e0e0;
+}
+
+.concluida span {
+    text-decoration: line-through;
+    color: #777;
+}
